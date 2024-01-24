@@ -444,7 +444,60 @@ a {
 .footer-svg {
   fill: #f4f4fd;
 }
-
+.box-for-email {
+}
+.email-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.email-form {
+  display: flex;
+}
+.email-label {
+  gap: 24px;
+}
+.email-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.email-input::placeholder {
+  color: #ffffff;
+}
+.email-button {
+  margin-left: 24px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: normal 0.04em;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.email-svg-tg {
+  margin-left: 16px;
+  fill: #fff;
+}
 /*****! FORM *****/
 .backdrop {
   position: fixed;
@@ -465,7 +518,7 @@ a {
   pointer-events: auto;
 }
 .modal {
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -473,6 +526,8 @@ a {
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -513,7 +568,6 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 .form {
@@ -525,12 +579,13 @@ a {
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
   display: block;
 }
 .modal-input-wrap {
   position: relative;
+  margin-bottom: 16px;
 }
 .form-input {
   width: 100%;
@@ -540,6 +595,8 @@ a {
   padding-left: 38px;
   color: #434455;
   outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -558,6 +615,7 @@ a {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text {
   width: 100%;
@@ -565,9 +623,20 @@ a {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
-  color: #434455;
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   outline: transparent;
   resize: none;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text:focus {
+  border-color: #4d5ae5;
+}
+.modal-checkbox {
+  margin-bottom: 24px;
 }
 .check-input:checked + .check-label span {
   background-color: #404bbf;
@@ -590,13 +659,16 @@ a {
   cursor: pointer;
   margin-left: 4px;
 }
-.check-label span {
+.check-span {
   width: 16px;
   height: 16px;
   border: 1px solid #2e2f4266;
-  border-radius: 4px;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 12px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
