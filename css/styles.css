@@ -456,9 +456,12 @@ a {
 }
 .email-form {
   display: flex;
+  gap: 24px;
+}
+.email-box {
+  margin-left: 80px;
 }
 .email-label {
-  gap: 24px;
 }
 .email-input {
   width: 264px;
@@ -574,7 +577,7 @@ a {
   gap: 24px;
 }
 .modal-box {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .form-label {
   color: #8e8f99;
@@ -586,7 +589,6 @@ a {
 }
 .modal-input-wrap {
   position: relative;
-  margin-bottom: 16px;
 }
 .form-input {
   width: 100%;
@@ -649,7 +651,6 @@ a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
 }
 .blue-text {
   color: #4d5ae5;
