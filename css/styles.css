@@ -489,7 +489,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: normal 0.04em;
+  letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
   border: none;
@@ -571,9 +571,10 @@ a {
   margin-bottom: 16px;
 }
 .form {
+  gap: 24px;
 }
 .modal-box {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .form-label {
   color: #8e8f99;
